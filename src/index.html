@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
+  <style>
+        .glitter-hover:hover {
+            background: linear-gradient(135deg, #ff00ff, #df0a0a);
+            box-shadow: 0 0 5px 2px rgba(255, 105, 180, 0.5);
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen ">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white flex justify-between items-center p-4 shadow-lg">
+        <div class="logo"><img src="HD logo.jpg" alt="logo"> </div>
+        
+        <nav class="flex gap-4 items-center">
+            <input type="checkbox" id="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle">☰</label>
+            <ul class="flex gap-4 items-center justify-center list-none p-0 m-0">
+           <li> <a href="#home" class="text-white p-2 rounded glitter-hover">Home</a></li>
+           <li> <a href="#about" class="text-white p-2 rounded glitter-hover">About</a></li>
+           <li><a href="#skills" class="text-white p-2 rounded glitter-hover">Skills</a></li>
+           <li> <a href="#certificate" class="text-white p-2 rounded glitter-hover">Certificate</a></li>
+           <li> <a href="#projects" class="text-white p-2 rounded glitter-hover">Projects</a></li>
+           <li> <a href="#contact" class="text-white p-2 rounded glitter-hover">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-mode" class="bg-gray-600 md:block text-white p-2 rounded">Day/Night</button>
+        
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 bg-pink-200" >
+        <!-- Home Section -->
+        <section id="home" class="text-center py-8">
+            <h1 class="text-4xl font-bold mb-4">Welcome To My Portfolio</h1>
+            <p class="text-lg mb-6">I'm a passionate web developer.</p>
+            <img src="1.jpg" alt="Profile" class="mx-auto rounded-full w-40 h-40 transition-transform duration-300 hover:scale-110"><br>
+
+            <div class="flex justify-center gap-4 mt-4">
+                <a href="https://www.linkedin.com/in/harsha-dhote-14201b22a/" class="text-blue-600">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                        <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+                        </svg>
+
+                </a>
+                <a href="https://x.com/HarshaDhot89335" class="text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                        <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                        </svg>
+                </a>
+                <a href="https://www.facebook.com/harsha.dhote.7549" class="text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                        <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                        </svg>
+                    </a>
+            </div> <br>
+
+            <button class="mt-4 bg-blue-500 text-black p-2 rounded hover:bg-blue-700 transition-colors">  <a href="Resume.Harsha.pdf">Download Resume</a> </button>
+        </section>
+
+        
+
+        <!-- About Section -->
+        <section id="about" class="py-8">
+            
+              
+            <h2 class="text-3xl font-bold  bg-gray-800 text-white p-2 rounded hover:bg-black transition-colors">
+                <span>
+                <b>About Me</b>
+            </span>
+            </h2>
+       
+            
+          
+                
+          
+            <div class="image-text-container">
+                <div class="text-item">
+            <p class="text-lg mb-6"> Hello! I'm Harsha Dhote, i'm from betul madhya pradesh (THE HEART 
+                OF  INDIA) india. I have done my graduation in B.SC(Computer Science) and an engineering i scored 70%. I have completed my Master of Computer Applications (MCA) from LNCT College, Bhopal, with a CGPA of 8.4. Currently. <br> <br> a passionate web developer with a love for creating stunning and functional websites. I am enhancing my skills in web development through courses on Internshala.Internshala really a very good platform  in web devolopment course i have learn lots of language like HTML , CSS , JS   and i have also use the technology and skills to built my own project and my project is blog website(THE TASTE OF INDIA).  <br><br>
+                My skills is C , C++ , python , html , css , js , MySql , and aslo  have knowledge about databases. i have use my skills to built my project and my Project is parking management system and desital library . <br><br>
+            My journey in web development started during my college years, where I developed a fascination for coding and design. Since then, I have been dedicated to learning and improving my skills in HTML, CSS, JavaScript, and various web development frameworks like tailwind css. <br><br>
+            In my free time, I indulge in my passion for drawing and painting, particularly human faces. This creative pursuit helps me bring a unique perspective to my web development projects. One of teh best sketch of my life is my bhaiya and bhabhi sketch and i have gifted them on there wedding. <br><br> <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition-colors">Read More</button>
+            </div>
+            <div class="image-container">
+                <img src="2.jpg" alt="About" class="image">
+            </div>
+            
+            
+           
+            </div>
+            
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-8">
+
+            <h2  class="text-3xl font-bold  bg-gray-800 text-white p-2 rounded hover:bg-black transition-colors">
+                <span>
+                     <b>My Skills</b>
+                </span> </h2>
+            <div class="mb-4">
+                <span class="block text-xl font-semibold">HTML</span>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-blue-500 h-4 rounded-full" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <span class="block text-xl font-semibold">CSS</span>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-blue-500 h-4 rounded-full" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <span class="block text-xl font-semibold">JavaScript</span>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-blue-500 h-4 rounded-full" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <span class="block text-xl font-semibold">C</span>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-blue-500 h-4 rounded-full" style="width: 98%;"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <span class="block text-xl font-semibold">C++</span>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-blue-500 h-4 rounded-full" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <span class="block text-xl font-semibold">python</span>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-blue-500 h-4 rounded-full" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <span class="block text-xl font-semibold">MySql</span>
+                <div class="w-full bg-gray-300 rounded-full h-4">
+                    <div class="bg-blue-500 h-4 rounded-full" style="width: 90%;"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--certification-->
+        <section id="certificate" class="py-8">
+        <h2 class="text-3xl font-bold  bg-gray-800 text-white p-2 rounded hover:bg-black transition-colors">
+            
+            <span>
+                <b>Certifications</b>
+            </span>
+            
+        </h2>
+        
+        <div class="p-5 sm:p-0 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Card 1 -->
+            <div class="shadow-xl bg-gray-800 p-5 md:my-10 rounded-lg flex-col gap-3">
+                <h3 class="text-xl font-semibold text-white">SQL_basic certificate</h3><br>
+                <p class="text-gray-50">Issued by HackerRank, this certificate validates proficiency in basic SQL concepts, including querying databases, filtering data, and working with different SQL functions. The certification demonstrates a foundational understanding of SQL necessary for managing and analyzing data effectively.</p><br>
+                <button class="bg-blue-500 text-white p-2 rounded  hover:bg-blue-700 transition-colors"><a href="sql_basic certificate.pdf"> View Certificate</a></button>
+            </div>
+            <!-- Card 2 -->
+            <div class="shadow-xl bg-gray-800 p-5  md:my-10 rounded-lg flex-col gap-3">
+                <h3 class="text-xl font-semibold text-white">Full Stack Development_Let's begin Training certificate</h3><br>
+                <p class="text-gray-50">I have successfully completed Full Stack Development: Let's begin course as a part of the Full Stack Development.
+                    The course consisted of Introduction to Full Stack Development, and Getting Started with Visual Studio Code
+                    modules. I have  scored 100% marks in the final assessment of this course.
+                    </p><br>
+                <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition-colors"> <a href="Full Stack Development_ Let's begin Training - Certificate of Completion.pdf">View Certificate</a></button>
+            </div>
+            <!-- Card 3 -->
+            <div class="shadow-xl bg-gray-800 p-5 md:my-10 rounded-lg flex-col gap-3">
+                <h3 class="text-xl font-semibold text-white">AWS Certificate</h3><br>
+                <p class="text-gray-50">I have completed AWS community and successfully completing career counselling webinar session with DevTown. Here is My certificate.</p><br>
+                <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition-colors"> <a href="AWS Certificate.pdf">View Certificate</a></button>
+            </div>
+            <!-- Card 4 -->
+            <div class="shadow-xl  bg-gray-800 p-5 md:my-10 rounded-lg flex-col gap-3">
+                <h3 class="text-xl font-semibold text-white">TCS Score card</h3><br>
+                <p class="text-gray-50">TCS iON National Qualifier Test (TCS iON NQT) is an Ability Test that assesses a candidate's competencies and skills. Each candidate who completes the TCS iON National Qualifier Test (TCS iON NQT) gets a TCS iON NQT Score. The TCS iON NQT - Cognitive Score is applicable for all industries and job roles.Here my score card of TCS NQT with a good marks.</p><br>
+                <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition-colors"><a href="TCS Score card.pdf">View Certificate</a></button>
+            </div>
+        </div>
+        
+         </section> 
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-8">
+            <h2 class="text-3xl font-bold  bg-gray-800 text-white p-2 rounded hover:bg-black transition-colors">
+                <span>
+                   <b>My Projects</b> 
+                </span>
+            </h2>
+            <div class="p-5 sm:p-0 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="shadow-xl  bg-gray-800 p-5 md:my-10 rounded-lg flex-col gap-3  my-5 hover:shadow-2xl transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-white">Parking Management system</h3><br>
+                <p class="text-gray-50">"Developed a Parking Management System using C++ and MySQL for efficient parking space allocation, vehicle tracking, and payment processing."</p><br>
+            </div> 
+            <div class="shadow-xl  bg-gray-800 p-5 md:my-10 rounded-lg flex-col gap-3">
+                <h3 class="text-xl font-semibold text-white">Digital library</h3><br>
+                <p class="text-gray-50">Digital Library is a project that manages and stores books information electronically according to students needs. The system helps both students and library manager to keep a constant track books available in the library. It allows both the admin and the student to search for the desired book. technology - HTML,CSS,JS,MYSQL,PHP</p><br>
+            </div>
+            <div class="shadow-xl  bg-gray-800 p-5 md:my-10 rounded-lg flex-col gap-3">
+                <h3 class="text-xl font-semibold text-white">Food Blog website</h3><br>
+                <p class="text-gray-50">My website title is THE TASTE OF INDIA and  Here, we'll take you on a delicious journey through the diverse flavors of Indian cuisine, from the rich, creamy Butter Chicken of the North to the spicy, tangy Fish Curry of the South, and from the aromatic Biryani of the East to the delectable Dhokla of the West. Join us as we share authentic recipes, cooking tips, and the stories behind India's most beloved dishes. Get ready to savor the true essence of India's culinary heritage! <br> technology - HTML
+
+                    .</p><br>
+            </div>
+            <div class="shadow-xl  bg-gray-800 p-5 md:my-10 rounded-lg flex-col gap-3">
+                <h3 class="text-xl font-semibold text-white">THE TASTE OF INDIA</h3><br>
+                <p class="text-gray-50"> Here, we'll take you on a delicious journey through the diverse flavors of Indian cuisine, from the rich, creamy Butter Chicken of the North to the spicy, tangy Fish Curry of the South, and from the aromatic Biryani of the East to the delectable Dhokla of the West. Join us as we share authentic recipes, cooking tips, and the stories behind India's most beloved dishes. Get ready to savor the true essence of India's culinary  and i have use  technology to build the website is - Html and CSS.</p><br>
+            </div>
+
+            </div>
+            
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-8">
+            <h2 class="text-3xl font-bold  bg-gray-800 text-white p-2 rounded hover:bg-black transition-colors">
+            
+                <span>
+                    <b>Contact</b>
+                </span>
+            </h2>
+           
+            <form class="grid gap-4">
+                <div>
+                    <label for="name" class="block text-lg">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded">
+                </div>
+                <div>
+                    <label for="message" class="block text-lg">Message</label>
+                    <textarea id="message" name="message" class="w-full p-2 border rounded"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 transition-colors">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 flex justify-between items-center shadow-lg">
+        <div>&copy; 2024 My Portfolio</div>
+        <div class="flex gap-4">
+            <a href="tel:+1234567890" class="text-white p-2 rounded glitter-hover">Call</a>
+            <a href="mailto:me@example.com" class="text-white p-2 rounded glitter-hover">Email</a>
+        </div>
+    </footer>
+</body>
+</html>
+
